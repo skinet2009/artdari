@@ -11,6 +11,9 @@ $config = [
            'enablePrettyUrl' => true,
            'showScriptName' => false,
            'rules' => [
+               'news/<id:\d+>' => 'news/view',
+               'news/page/<page:\d+>' => 'news/index',
+               'news/' => 'news/index',
                '<controller>/<action>' => '<controller>/<action>',
            ]
          ],
